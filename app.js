@@ -6,7 +6,7 @@ const RESULTS_LIST = document.getElementById("results_list");
 const SEARCH_INPUT = document.getElementById("search_input");
 // Add directories to this list to index more folders
 const FILE_PATHS = [
-  "C:/Users/maddo/AppData/Roaming/Microsoft/Windows/Start Menu/"
+  require("os").homedir() + "/AppData/Roaming/Microsoft/Windows/Start Menu/"
 ];
 
 $(document).ready(function() {
